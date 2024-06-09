@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Caipora Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 
+      id="title">
+      Caipora Studio - Contact me!
+        </h1>
+      <p 
+      id="description">
+      Describe your project and I'll contact you with a price
+        </p>
+
+    <form id="survey-form">
+
+      <fieldset>
+
+        <label 
+        for="name"
+        id="name-label">
+          Name: 
+          <input 
+            id="name" 
+            name="name" 
+            type="text" 
+            placeholder="Che Guevara" 
+            required />
+              </label>
+
+        <label 
+          for="email"
+          id="email-label">
+          E-mail: 
+          <input 
+            id="email" 
+            name="email" 
+            type="email" 
+            placeholder="che.guevara@freecuba.com" 
+            required />
+              </label>
+
+       </fieldset>
+
+
+       <fieldset>
+        <legend>
+        Choose what you are looking for: 
+          </legend>
+          
+          
+       <label 
+       for="mixing">
+         <input 
+          id="mixing" 
+          type="radio" 
+          name="role" 
+          value="mixing"
+          class="inline" 
+          checked /> 
+       Mixing
+          </label>
+          
+       <label 
+        for="recording">
+         <input 
+          id="recording" 
+          type="radio" 
+          name="role" 
+          value="recording"
+          class="inline" />
+         Recording
+          </label>
+         
+       <label 
+        for="production">
+        
+        <input 
+          id="production" 
+          type="radio" 
+          name="role" 
+          value="production"
+          class="inline" />
+           Full Production
+           </label>
+          
+       <label 
+        for="mastering">
+        
+        <input 
+          id="mastering" 
+          type="radio" 
+          name="role" 
+          value="mastering"
+          class="inline" /> Mastering
+          </label>
+
+
+
+         </fieldset>
+       <fieldset>
+       
+
+        <label 
+          for="number"
+          id="number-label">
+          Number of songs: 
+          <input 
+            id="number" 
+            name="number" 
+            type="number" 
+            min="1" 
+            max="20" 
+            placeholder="1">
+            </label>
+
+        <label 
+          for="genre">Genre: 
+          <select 
+          id="dropdown" 
+          name="genre">
+           
+           <option value="0">(select one)</option>
+           <option value="1">Jazz</option>
+           <option value="2">Metal</option>
+           <option value="3">Pop</option>
+           <option value="4">Rock</option>
+           <option value="5">Other</option>
+          </select>
+        </label>
+
+        <label 
+          for="description">
+          Describe your project: 
+          
+          <textarea 
+            id="description-label" 
+            name="description" 
+            rows:"3" 
+            cols="20" 
+            minlength="20" 
+            placeholder="I want your services for..." 
+            required />
+            </textarea>
+          </label>
+
+          <p>
+           What have you done so far with your project?
+            <span 
+            class="clue">
+            (Check all that apply)
+            </span>
+          </p>
+
+          <label>
+           
+            <input 
+              name="stage" 
+              value="nothing" 
+              type="checkbox" 
+              class="input-checkbox" />I haven't done anything yet
+            </label>
+            
+          <label>   
+            <input 
+              name="stage" 
+              value="wrote-lyrics" 
+              type="checkbox" 
+              class="input-checkbox" />I wrote the lyrics
+            </label>
+
+          <label>   
+            <input 
+              name="stage" 
+              value="wrote-instruments" 
+              type="checkbox" 
+              class="input-checkbox" />I wrote the instruments
+            </label>
+
+          <label>   
+            <input 
+              name="stage" 
+              value="recorded-demo" 
+              type="checkbox" 
+              class="input-checkbox" />I recorded a demo
+            </label>
+
+          <label>   
+            <input 
+              name="stage" 
+              value="recorded-song" 
+              type="checkbox" 
+              class="input-checkbox" />I recorded all parts
+            </label>
+
+         <label>   
+           <input 
+            name="stage" 
+            value="mixed" 
+            type="checkbox" 
+            class="input-checkbox" />I mixed the song
+          </label> 
+  
+        </div>
+        </fieldset>
+
+      
+          <input 
+            id="submit" 
+            type="submit" 
+            value="Send" />
+
+
+
+
+    </form>
+  </body>
+</html>
